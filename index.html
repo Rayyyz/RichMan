@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--引入jQuery库-->
+    <script src="https://cdnjs.gtimg.com/cdnjs/libs/jquery/2.1.1-rc2/jquery.js"></script>
+    <!--引入样式表-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--引入js文件-->
+    <script src="js/mapdata.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/support.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="player" id="player-0">
+            <div class="player-img">
+                <img src="img/player0-headimg.png" alt="">
+            </div>
+            <div class="money">
+                <b>¥ </b><span id="money-0">0</span>
+            </div>
+        </div>
+        <div class="player" id="player-1">
+            <div class="player-img">
+                <img src="img/player1-headimg.png" alt="">
+            </div>
+            <div class="money">
+                <b>¥ </b><span id="money-1">0</span>
+            </div>
+        </div>
+        <div id="dice" onclick="getPoint()">
+        </div>
+        <input type="button" value="newgame" οnclick="location.reload([bForceGet])">
+        <div class="main-map">
+            <!--行走格子-->
+            <div class="walk-block" id="walk-block-0"></div>
+            <div class="walk-block" id="walk-block-1"></div>
+            <div class="walk-block" id="walk-block-2"></div>
+            <div class="walk-block" id="walk-block-3"></div>
+            <div class="walk-block" id="walk-block-4"></div>
+            <div class="walk-block" id="walk-block-5"></div>
+
+            <div class="walk-block" id="walk-block-6"></div>
+
+            <div class="walk-block" id="walk-block-7"></div>
+            <div class="walk-block" id="walk-block-8"></div>
+            <div class="walk-block" id="walk-block-9"></div>
+            <div class="walk-block" id="walk-block-10"></div>
+            <div class="walk-block" id="walk-block-11"></div>
+            <div class="walk-block" id="walk-block-12"></div>
+
+            <div class="walk-block" id="walk-block-13"></div>
+
+            <!--建筑格子-->
+            <div class="build-block" id="build-block-0"></div>
+            <div class="build-block" id="build-block-1"></div>
+            <div class="build-block" id="build-block-2"></div>
+            <div class="build-block" id="build-block-3"></div>
+            <div class="build-block" id="build-block-4"></div>
+            <div class="build-block" id="build-block-5"></div>
+
+            <div class="special-block" id="special-block-0"></div>
+            <div class="special-block" id="special-block-1"></div>
+
+            <div class="build-block" id="build-block-7"></div>
+            <div class="build-block" id="build-block-8"></div>
+            <div class="build-block" id="build-block-9"></div>
+            <div class="build-block" id="build-block-10"></div>
+            <div class="build-block" id="build-block-11"></div>
+            <div class="build-block" id="build-block-12"></div>
+
+            <div class="eventbox">
+                <span id="eventmsg">欢迎来到大富翁！━(*｀∀´*)ノ亻!</span>
+                <div class="choose">
+                    <button id="btn-yes" onclick="chooseYes()">yes</button>
+                    <button id="btn-no" onclick="chooseNo()">no</button>
+                </div>
+            </div>
+
+            <div class="chess" id="chess-0">
+                <img src="img/player0.png" alt="">
+            </div>
+            <div class="chess" id="chess-1">
+                <img src="img/player1.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

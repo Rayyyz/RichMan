@@ -1,0 +1,142 @@
+body{
+    
+    background-image: url('../img/背景.jpg');
+    background-size: cover;
+}
+
+.container{
+    width: 1200px;
+    height: 100%;
+
+    left: 50%;
+    margin-left: -600px;
+    position: relative;
+}
+
+
+.player{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.player .player-img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.player img{
+    width: 100%;
+    height: 100%;
+}
+
+.player .money{
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.player .money span{
+    color: black;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+#dice{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    background-image: url('../img/骰子.png');
+    background-size: 80px 80px;
+}
+
+
+.main-map{
+    width: 1200px;
+    height: 620px;
+
+    background-image: url('../img/地图背景.jpg');
+    background-size: cover;
+    position: relative;
+    top: 140px;
+}
+
+.main-map .walk-block{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #a2a2a2;
+    border-radius: 10px;
+    background-color: rgb(255, 252, 199);
+    position: absolute;
+}
+
+.main-map .build-block{
+    width: 100px;
+    height: 100px;
+    border: 1px solid grey;
+
+    position: absolute;    
+}
+
+.main-map .special-block{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    background-color: rgb(255, 255, 255);
+    background-image: url('../img/问号.png');
+    background-size: 100% 100%;
+
+    position: absolute;    
+}
+
+.eventbox{
+    width: 460px;
+    height: 90px;
+    padding-top: 10px;
+    position: absolute;
+    border: 1px solid white;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.eventbox span{
+    color:rgb(6, 21, 48);
+    font-size: 20px;
+}
+
+.eventbox .choose{
+    display: none;
+}
+
+.eventbox .choose #btn-no{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.eventbox .choose #btn-yes{
+    position: absolute;
+    right: 45px;
+    bottom: 10px;
+}
+
+.chess{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.chess img{
+    width: 100%;
+    height: 100%;
+}
+
