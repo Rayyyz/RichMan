@@ -8,7 +8,7 @@ function showMoney(turn, num) {
 function showAnimationPoint(point) {
     var dice = $('#dice');
     dice.css({
-        "background-image": "url(../img/骰子" + point + ".png)"
+        "background-image": "url(/img/骰子" + point + ".png)"
     });
     return;
 }
@@ -47,13 +47,13 @@ function showBoughtBlock(turn, pos) {
     } else {
         block.css("border", "2px solid red");
     }
-    block.css("background-image", "url('../img/房子1.png')");
+    block.css("background-image", "url('/img/房子1.png')");
     block.css("background-size", "100% 100%");
 }
 
 function showUpdateBlock(pos) {
     var block = $('#build-block-' + pos);
-    block.css("background-image", "url('../img/房子" + getLandLevel(pos) + ".png')");
+    block.css("background-image", "url('/img/房子" + getLandLevel(pos) + ".png')");
 }
 
 function showAnimationTurn(turn) {

@@ -1,6 +1,6 @@
 body{
     
-    background-image: url('../img/背景.jpg');
+    background-image: url('/img/背景.jpg');
     background-size: cover;
 }
 
@@ -51,7 +51,7 @@ body{
     position: absolute;
     left: 50%;
     top: 50px;
-    background-image: url('../img/骰子.png');
+    background-image: url('/img/骰子.png');
     background-size: 80px 80px;
 }
 
@@ -60,7 +60,7 @@ body{
     width: 1200px;
     height: 620px;
 
-    background-image: url('../img/地图背景.jpg');
+    background-image: url('/img/地图背景.jpg');
     background-size: cover;
     position: relative;
     top: 140px;
@@ -89,7 +89,7 @@ body{
     border-radius: 50%;
 
     background-color: rgb(255, 255, 255);
-    background-image: url('../img/问号.png');
+    background-image: url('/img/问号.png');
     background-size: 100% 100%;
 
     position: absolute;    
