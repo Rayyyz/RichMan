@@ -2,15 +2,11 @@
 function showMoney(turn, num) {
     var moneyShow = $('#money-' + turn);
     moneyShow.text(num);
-    return;
 }
 
 function showAnimationPoint(point) {
     var dice = $('#dice');
-    dice.css({
-        "background-image": "url(../img/骰子" + point + ".png)"
-    });
-    return;
+    dice.css("background-image", "url(../img/骰子" + point + ".png)");
 }
 
 function showAnimationMove(turn) {
@@ -20,7 +16,6 @@ function showAnimationMove(turn) {
         ShowStepMove(turn, start);
         start = (start + 1) % 14;
     }
-    return;
 }
 
 function ShowStepMove(turn, start) {

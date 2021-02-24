@@ -53,6 +53,7 @@ body{
     top: 50px;
     background-image: url('../img/骰子.png');
     background-size: 80px 80px;
+    z-index: 1000;
 }
 
 
