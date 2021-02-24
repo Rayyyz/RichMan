@@ -6,7 +6,29 @@ function showMoney(turn, num) {
 
 function showAnimationPoint(point) {
     var dice = $('#dice');
-    dice.css("background-image", "url(../img/骰子" + point + ".png)");
+    switch (point) {
+        case 1:
+            dice.css("background-image", "url(../img/骰子1.png)");
+            break;
+        case 2:
+            dice.css("background-image", "url(../img/骰子2.png)");
+            break;
+        case 3:
+            dice.css("background-image", "url(../img/骰子3.png)");
+            break;
+        case 4:
+            dice.css("background-image", "url(../img/骰子4.png)");
+            break;
+        case 5:
+            dice.css("background-image", "url(../img/骰子5.png)");
+            break;
+        case 6:
+            dice.css("background-image", "url(../img/骰子6.png)");
+            break;
+        default:
+            break;
+    }
+
 }
 
 function showAnimationMove(turn) {
