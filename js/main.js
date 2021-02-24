@@ -81,11 +81,18 @@ function initBuild() {
 function isGameOver() {
     for (let i = 0; i < 2; i++) {
         if (player[i].money < 0) {
-            alert("游戏结束！" + player[i].name + "输了。");
             return true;
         }
     }
     return false;
+}
+
+function gameOver() {
+    for (let i = 0; i < 2; i++) {
+        if (player[i].money < 0) {
+            alert("游戏结束！" + player[i].name + "输了。");
+        }
+    }
 }
 
 //投骰子
@@ -99,7 +106,7 @@ function getPoint() {
     if (!isGameOver()) {
         exchangeTurn();
     } else {
-
+        gameOver();
     }
 
 }

@@ -6,29 +6,7 @@ function showMoney(turn, num) {
 
 function showAnimationPoint(point) {
     var dice = $('#dice');
-    switch (point) {
-        case 1:
-            dice.css("background-image", "url(../img/骰子1.png)");
-            break;
-        case 2:
-            dice.css("background-image", "url(../img/骰子2.png)");
-            break;
-        case 3:
-            dice.css("background-image", "url(../img/骰子3.png)");
-            break;
-        case 4:
-            dice.css("background-image", "url(../img/骰子4.png)");
-            break;
-        case 5:
-            dice.css("background-image", "url(../img/骰子5.png)");
-            break;
-        case 6:
-            dice.css("background-image", "url(../img/骰子6.png)");
-            break;
-        default:
-            break;
-    }
-
+    dice.css("background-image", "url(https://rayyyz.github.io/RichMan/img/骰子" + point + ".png)");
 }
 
 function showAnimationMove(turn) {
@@ -64,13 +42,13 @@ function showBoughtBlock(turn, pos) {
     } else {
         block.css("border", "2px solid red");
     }
-    block.css("background-image", "url('../img/房子1.png')");
+    block.css("background-image", "url(https://rayyyz.github.io/RichMan/img/房子1.png)");
     block.css("background-size", "100% 100%");
 }
 
 function showUpdateBlock(pos) {
     var block = $('#build-block-' + pos);
-    block.css("background-image", "url('../img/房子" + getLandLevel(pos) + ".png')");
+    block.css("background-image", "url(https://rayyyz.github.io/RichMan/img/房子" + getLandLevel(pos) + ".png)");
 }
 
 function showAnimationTurn(turn) {
